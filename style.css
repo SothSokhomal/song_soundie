@@ -1,0 +1,484 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222222;
+    color: #EDEDED;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.head{
+    background-image: url('./images/simon-noh-0rmby-3OTeI-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 400px;
+}
+
+.logo h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding: 1.5rem;
+}
+
+.yellow{
+    color: #F0A500;
+}
+
+.menu img{
+    height: 64px;
+    width: 64px;
+    padding: 1rem;
+}
+
+
+
+.overlay{
+    background: rgba(0, 0, 0, 0.75);
+    height: 400px;
+}
+nav ul{
+    list-style-type: none;
+    display: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #F0A500;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 1rem;
+    transition: all 500ms;
+}
+
+nav ul li a:hover{
+    border-bottom: 3px solid #FFF323;
+    
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.sidebar{
+    background-color: rgba(94, 94, 94, 0.8);
+    width: 100%;
+    height: 100vh;
+
+
+    position: fixed;
+    top: 0;
+
+
+    left: -100%;
+
+  transition: all 500ms;
+
+  }
+
+  div:target{
+    left: 0;
+  }
+  .sidebar ul{
+    list-style-type: none;
+    height: 100%;
+    padding: 3rem;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+   
+    gap: 5rem;
+    
+    
+  }
+
+
+  .sidebar ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #F0A500;
+    padding: 1rem;
+    
+  }
+
+
+  .sidebar ul li a:hover{
+    border-bottom: 3px solid #FFF323;
+  }
+
+
+  .sect-title{
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 2rem;
+  }
+
+  .sect-title:hover{
+    color: #F0A500;
+  }
+
+
+
+  .search form{
+    padding: 2rem;
+  }
+
+
+  .search input{
+    background-color: rgba(94, 94, 94, 0.8);
+  }
+
+
+  .s-btn{
+    width: 20%;
+    height: 35px;
+    left: -5px;
+    border-radius: 0 25px 25px 0;
+    border: none;
+    outline: none; 
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(54, 54, 54, 0.8) ;
+  }
+  .pop-card{
+    width: 100%;
+    height: 150px;
+    /* background-color: #F0A500; */
+    padding: 1rem;
+    display: flex;
+    align-items:center;
+    border-radius: 15px;
+    transition: all 500ms;
+    
+    
+  }
+  .pop-card:hover{
+    background: rgb(205,144,9);
+    background: linear-gradient(288deg, rgba(205,144,9,1) 20%, rgba(255,175,55,1) 100%);
+    box-shadow: -5px -10px 0px #f6d269, -5px -20px 0px #f8e79a ;
+
+    
+  }
+  .pop-card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .pop-detial{
+    padding: 1rem;
+  }
+  .pop-detial h4{
+    font-size: 1.8rem;
+    font-weight: 500;
+    
+  }
+
+  .pop-detial p{
+    font-size: 1.7rem;
+    color: rgb(168, 168, 168);
+  }
+
+
+  .heart{
+    padding: 1rem;
+  }
+
+  .heart ion-icon:hover{
+    color: red;
+  }
+  .pop-number{
+    font-size: 1.5rem;
+  } 
+
+  /* .num{
+    display: flex;
+  
+  } */
+
+  .pop-detial{
+   display: flex;
+   align-items: center;
+   text-align: center;
+   flex-grow: 1;
+  justify-content: space-between;
+  }
+  .pop-wrapper{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* flex-wrap: nowrap; */
+  }
+
+  /* .num p{
+    padding-left: 15rem;
+  } */
+
+
+  .fans img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+  }
+
+
+  .fan-detial h4{
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+
+
+
+
+  .fans{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    
+    
+   } 
+
+   .fan-wrapper{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* flex-grow: 2; */
+   }
+
+  /* .fans{
+    width: 50%;
+    height: 100px; */
+    /* background-color: #F0A500; */
+    /* padding: 1rem;
+    display: flex;
+    align-items:center; */
+  /* } */ 
+
+
+
+
+.songs img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.songs-detial h4{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.songs-detial p{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.songs{
+    width: 350px;
+    height: 300px;
+    background-color:#434242 ;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+.songs:hover{
+    background-color: #B2B2B2;
+}
+
+
+.best-wrapper{
+    padding: 2rem;
+    display: flex;
+    
+    flex-wrap: wrap;
+   
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+   
+    gap: 2.5rem;
+    
+}
+
+.money{
+  text-align: center;
+  background-color: #F0A500;
+  border-radius: 1rem 1rem 0 0 ;
+}
+.money h2{
+  font-size: 3rem;
+  font-weight: 800;
+  padding: 1rem;
+}
+
+.money p{
+  font-size: 1.3rem;
+}
+
+.price-info h3{
+  font-size: 2rem;
+  color: #F0A500;
+}
+
+.benefit{
+  list-style-type: none;
+  font-size: 2rem;
+  padding: 1.5rem;
+  color: #EDEDED;
+  flex-grow: 1;
+  gap: 2rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.price-card{
+  width: 230px;
+  background-color: rgba(24, 23, 23, 0.75);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  
+}
+
+
+.price-info{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.c-btn{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  color: black;
+  font-weight: 800;
+ 
+
+}
+
+.tick{
+  color: green;
+  margin-left: -1.5rem;
+  padding-right: .5rem;
+  font-weight: bold;
+}
+
+
+.cross{
+  color: red;
+  margin-left: -1.5rem;
+  padding-right: .5rem;
+  font-weight: bold;
+}
+
+
+
+
+.c-btn:hover{
+  background-color: #F0A500;
+}
+/* 
+.best-song{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.price-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.price{
+  padding: 2rem;
+}
+footer{
+  background-color: #393E46;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+input{
+  width: 50%;
+  height: 35px;
+  border-radius: 25px 0 0 25px;
+  padding: 0 25px;
+  border: none;
+  outline: none;
+}
+
+.join-btn{
+  width: 20%;
+  height: 35px;
+  left: -5px;
+  border-radius: 0 25px 25px 0;
+  border: none;
+  outline: none; 
+  cursor: pointer;
+  position: relative;
+  background-color: red;
+}
+
+footer h4{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+footer p{
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+
+ion-icon{
+  width: 20px;
+  height: 20px;
+
+}
+
+.aboutus h2,
+.f-info h2,
+.media h2{
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.f-p{
+  text-align: center;
+}

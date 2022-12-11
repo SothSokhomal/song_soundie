@@ -1,0 +1,111 @@
+@media only screen and (min-width: 768px){
+    /* body{
+        background-color: darkgray;
+    } */
+
+    .menu img{
+        display: none;
+    }
+
+    nav{
+        flex-grow: 1;
+        padding-top: 2rem;
+    }
+    nav ul{
+        display: flex;
+        justify-content:space-between
+    }
+
+    nav ul li{
+        flex-grow: 1;
+        text-align: center;
+    }
+    
+}
+
+
+@media only screen and (min-width:992px){
+    /* body{
+        background-color: darkkhaki;
+    } */
+
+    /* .head{
+        height: 450px;
+    } */
+    nav{
+        padding-top: 1.5rem;
+    }
+    nav ul li a{
+        font-size: 2.5rem;
+    }
+
+
+    .popular-like{
+        display: flex;
+        
+    }
+
+    .popular{
+        flex-basis: 75%;
+    }
+
+    .fan-like{
+        flex-basis: 25%;
+    }
+
+    .fan-wrapper{
+        flex-direction: column;
+    }
+
+    
+    .info-media{
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 50%;
+        
+    }
+
+    .f-info{
+        flex-grow: 1;
+        
+    }
+
+
+    input{
+        width: 25%;
+    }
+
+    .join-btn{
+        width: 10%;
+    }
+}
+
+
+
+
+@media only screen and (min-width:1248px){
+    /* body{
+        background-color: darkgreen;
+    } */
+
+    .fan-wrapper{
+        flex-direction: column;
+    }
+    .popular-like{
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+
+    .popular{
+        flex-basis: 80%;
+    }
+
+    .fan-like{
+        flex-basis: 20%;
+    }
+
+    .s-btn{
+        width: 10%;
+    }
+}
